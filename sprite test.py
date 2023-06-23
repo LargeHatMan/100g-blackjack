@@ -14,9 +14,9 @@ c.pack()
 i=0
 def getSprite(x,y):
     img = Image.open("Deck.png").convert("RGBA")
-    xi = x*50
+    xi = x*49
     yi = y*65
-    img2 = img.crop([xi,yi,xi+50,yi+65])
+    img2 = img.crop([xi,yi,xi+49,yi+65])
     return ImageTk.PhotoImage(img2)    
 image = tk.PhotoImage(file="Deck.png")
 deck=[]
